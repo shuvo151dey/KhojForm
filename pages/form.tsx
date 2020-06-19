@@ -9,7 +9,7 @@ export default function Form(): React.ReactElement {
         submitFocusError: true,
         validateCriteriaMode: 'firstError',
     })
-    const submitHandler = (event) => {
+    const submitHandler = (event: any): void => {
         event.preventDefault()
         fetch('/api/updateSheet/', {
             method: 'POST',
