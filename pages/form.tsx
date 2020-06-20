@@ -31,6 +31,7 @@ export default function Form(): React.ReactElement {
             <div className="pl-8 mt-2">Please fill every field</div>
             <form
                 className="shadow-md rounded px-8 pt-6 pb-8 mb-4"
+                // @ts-ignore: Unreachable code error
                 onSubmit={(e) => handleSubmit(submitHandler(e))}
             >
                 <div className="mb-4">
