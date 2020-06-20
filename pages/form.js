@@ -11,7 +11,7 @@ export default function Form() {
     })
     const submitHandler = (event) => {
         event.preventDefault()
-        fetch('/api/updateSheet/', {
+        fetch('/api/sheetAction/', {
             method: 'POST',
             headers: {
                 Accept: 'application/json',
